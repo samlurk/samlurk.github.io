@@ -1,0 +1,680 @@
+/*--------------------------General Settings-----------------------------*/
+h1, h2, h3, h4, h5, h6 {
+    color: #222;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.34;
+    text-rendering: auto; /* Android browser */
+}
+body {
+    color: #333;
+    font-size: 1em; /* font-size: 18px; */
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.8;
+}
+
+/*------------------------------Header------------------------------*/
+
+/*---------------background_header_and_color---------------*/
+.header{
+    display: block;
+    width: 100%;
+    height: 70vh;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%);
+}
+.imagen-contenedor{
+    z-index: -1;
+    display: block;
+}
+.imagen-contenedor img{
+    width: 1980px;
+    position: absolute;
+    z-index: -2;
+    height: 70vh;
+    object-fit: cover;
+}
+/*Ocultando el nav responsivo*/
+.header__nav-caja-responsive__ul{
+    display: none;
+}
+/*Ocultando tabla desplegable responsiva*/
+.header__nav-boton{
+    display: none;
+}
+.header nav{
+    position: sticky;
+    top: 0;
+}
+/*---------------header__nav---------------*/
+.header__nav{
+    margin: 4px 0 4px 0;
+    width: 100%;
+    height: 12%;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/*Links*/
+.header__nav-caja__ul a{
+    text-decoration: none;
+    color: #ffff;
+}
+a{
+    text-decoration: none;
+}
+/*background al nav*/
+.header nav{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.6) 100%, rgba(0, 0, 0, 0.6)100%);
+}
+/*---------------header__nav-caja---------------*/
+
+/*Calculando tamanio de la caja padre 2 con respecto al padre nav*/
+.header__nav-caja{
+    width: 60%; 
+}
+/*Tamnio, centrar la caja hija, tipo de bloque*/
+.header__nav-caja__ul{
+    display: inline-flex;
+    text-align: center;
+    width: 100%;
+    align-self: flex-start;
+    justify-content: center;
+}
+.header__nav-caja__li{
+    display: inline-block;
+}
+.header__nav-caja__li:first-child{
+    background:  #FF8E64;
+    border-radius: 15px;
+}
+
+/*Espacio entre links*/
+.header__nav-caja__li a{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+/*Animacion a nav*/
+.header__nav-caja__li:hover > a{
+    color: #FF8E64;
+}
+.header__nav-caja__li:active > a{ 
+    color: #CB643E;
+}
+
+/*---------------header__nav-a---------------*/
+
+/*Calculando tamanio de la caja padre 1 con respecto al padre nav*/
+.header__nav-a{
+    width: 40%;
+    text-align: center;
+}
+/*Tamanio grosor del titulo*/
+.header__nav-titulo {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #ffff;
+}
+/*---------------header__titulo---------------*/
+.header__titulo{
+    display: block;
+    margin-top: 20vh;
+}
+.header__titulo h1, .header__titulo p{
+    color: #fff;
+    text-align: center;
+}
+/*------------------------------Contenido------------------------------*/
+
+/*---------------contenido__primario---------------*/
+.contenido__primario{
+    display: inline-flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    padding: 4% 0 4% 0;
+    background: #F5F5F5;
+}
+/*---------------contenido__primario-porque---------------*/
+.contenido__primario-porque{
+    width: 75%;
+    text-align: center;
+}
+
+/*---------------contenido__secundario---------------*/
+.contenido__secundario{
+    padding: 4% 0 4% 0;
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-evenly;
+    background: #FC7643;
+
+}
+/*---------------contenido__secundario-mv---------------*/
+.contenido__secundario-mv{
+    width: 45%;
+    text-align: center;
+}
+
+/*---------------contenido__terciario---------------*/
+.contenido__terciario{
+    display: inline-flex;
+    padding-top: 4%;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color: #5ECCA9;
+    padding-bottom: 4%;
+}
+/*---------------contenido__primero-valores---------------*/
+.contenido__terciario-valores{
+    text-align: center;
+    width: 21%;
+    background-color: #212833;
+    border-radius: 15%;
+    box-shadow: 2px 2px 6px 2px grey;
+}
+/*---------------contenido__primero-valores h2---------------*/
+.contenido__terciario-valores h2{
+    padding: 20px 0 20px 0;
+    color: white;
+}
+/*---------------contenido__terciario-valores_img---------------*/
+.contenido__terciario-valores_img{
+    width: 100px;
+    height: 100px;
+    padding: 20px 0 20px 0;
+}
+/*---------------contenido__terciario-valores p---------------*/
+.contenido__terciario-valores p{
+    padding: 2px 0 20px 0;
+    text-align: justify;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: white;
+}
+/*---------------contenido__testimonios---------------*/
+.contenido__testimonios{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 4% 0 10% 0;
+}
+/*---------------contenido__testimonios-contenedor---------------*/
+.contenido__testiomonios-contenedor{
+    width: 50%;
+}
+/*---------------testimonios__header---------------*/
+.testimonios__header{
+    margin-bottom: 70px;
+}
+/*---------------testimonios__estudiante-personas ul---------------*/
+.testimonios__estudiante-personas ul{
+    list-style-type: none;
+    display: inline-flex;
+}
+.testimonios__estudiante-personas ul li{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/*---------------testimonios__estudiante-personas---------------*/
+.testimonios__estudiante-personas{
+    display: inline-flex;
+    margin-bottom: 30px;
+}
+/*---------------testimonios__estudiante-personas_img---------------*/
+.testimonios__estudiante-personas_img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+h6 {
+    color: #FC7643;
+}
+/*---------------testimonios__estudiante-datos---------------*/
+.testimonios__estudiante-datos{
+    margin-bottom: 30px;
+}
+/*---------------testimonios__estudiante-nombre---------------*/
+.testimonio__estudiante-nombre{
+    margin-bottom: 15px;
+}
+/*------------------------------Footer------------------------------*/
+
+/*---------------contenedor__footer---------------*/
+.contenedor__footer{
+    display: flex;
+    padding-top: 4%;
+    justify-content: space-around;
+    background: #242830;
+    color: white;
+}
+/*---------------footer__contacto-datos---------------*/
+.footer__contacto-datos{
+    margin: 20px 0 20px 0;
+}
+/*h3 footer color*/
+.footer h3{
+    color: white;
+}
+/*---------------footer__siguenos-redes---------------*/
+.footer__siguenos-redes{
+    display: flex;
+}
+/*Links href redes*/
+.footer__siguenos-redes a{
+    margin: 20px 15px 0 0;
+    width: 30px;
+    height: 25px;
+}
+/*Imagen circulo*/
+.footer__siguenos-redes a img{
+    border-radius: 50%;
+}
+/*---------------footer__siguenos-redes---------------*/
+.footer__copyright{
+    display: flex;
+    width: 100%;
+    color: white;
+    background-color: #242830;
+    justify-content: center;
+}
+    /*------------------------------NIVELES.HTML------------------------------*/
+    .contenido__hacemos{
+        padding: 4% 0 4% 0;
+        text-align: center;
+    }
+    .contenido__datos{
+        width: 100%;
+        text-align: center;  
+    }
+    .contenido__niveles{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .contenido__niveles > div{
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background-size: cover;
+    }
+    .contenido__preescolar{
+        background-image:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url("../imagen/preescolar.jpg");
+    }
+    .contenido__primaria{
+        background-image:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url("../imagen/primaria.jpg");
+    }
+    .contenido__media{
+        background-image:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url("../imagen/media.jpg");
+    }
+    .contenido__datos{
+        position: absolute;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        bottom: calc(50% - 59.36px);
+    }
+    .contenido__datos p{
+        padding: 0 15px 0 15px;
+    }
+    .contenido__datos h1{
+        padding-bottom: 10px;
+        color:white;
+    }
+
+
+/*------------------------------Responsive------------------------------*/
+@media only screen and (max-width: 480px){
+    /*Modificando el tamaño de las letras*/
+    body{
+        font-size: .6rem;
+    }
+    /*Ocultar nav pc resolucion 1300x600*/
+    .header__nav-caja{
+        display: none;
+    }
+    /*Modificando la tabla desplegable responsiva*/
+    .header__nav-boton{
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        padding-top: 4px;
+    }
+    /*Alinear el contenedor del href titulo*/
+    .header__nav-a{
+        width: 90%;
+        text-align: start;
+    }
+    /*Aplicando padding al href titulo*/
+    .header__nav-a a{
+        padding-left: 10px;
+        width: 100%;
+    }
+    /*Modificando el texto de las listas responsiva*/
+    .header__nav-caja-responsive__li a{
+        color: white;
+        padding-left: 10px;
+        font-size: .7rem;
+        font-weight: 600;
+        width: 100vw;
+        display: block;
+    }
+    /*Modificando el espacio entre las listas*/
+    .header__nav-caja-responsive__li{
+        padding: 10px 0 10px 0;
+        width: 100vw;
+        display: block;
+    }
+    /*background al listado*/
+    .header__nav-caja-responsive__ul{
+        background-image: linear-gradient( rgba(0, 0, 0, 0.7) 100%, rgba(0, 0, 0, 0.7)100%);
+    }
+    /*Modificando el div tabla desplegable*/
+    .boton-img{
+        width: 32px;
+        height: 32px;
+        margin-left: 88%; 
+        position: relative;
+    }
+    /*Ajustando el nav*/
+    nav {
+        padding: 10px 0 10px 0;
+    }
+    /*Activar el desplegable*/
+    .header__nav-boton:hover > ul{
+        display: block;
+        position: absolute;
+        margin-top: 8px;
+        width: 100%;
+    }
+    /*Centrando el titulo con parrafo con respecto al viewport*/
+    .header__titulo{
+        margin-top: 30vh;
+    } 
+    /*------------------------------Contenido------------------------------*/
+    .contenido__primario{
+        padding: 5% 0 7% 0;
+    }
+    .contenido__primario-porque{
+        width: 95%;
+        text-align: justify;
+    }
+    .contenido__primario-porque h1{
+        text-align: center;
+    }
+    .contenido__secundario{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contenido__secundario-mv{
+        width: 100%;
+        padding: 10px 0 10px 0px;
+        text-align: justify;
+    }
+    .contenido__secundario-mv h1{
+        text-align: center;
+    }
+    .contenido__secundario-mv p{
+        padding: 0 10px 0 10px;
+    }
+    .contenido__terciario{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .contenido__terciario-valores{
+        width: 210px;
+        height: 250px;
+        margin: 20px 0 20px 0;
+    }
+    .contenido__terciario-valores_img{
+        width: 50px;
+        height: 50px;
+        padding: 10px 0 10px 0;
+    }
+    .contenido__terciario-valores h2{
+        padding: 10px 0 10px 0;
+    }
+    .contenido__terciario-valores p{
+        margin: 0px 15px 0 15px;
+    }
+    .contenido__testiomonios-contenedor{
+        width: 90%;
+    }
+    .testimonios__estudiante-personas_img{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+    .testimonios__header{
+        margin-bottom: 30px;
+    }
+    .testimonios__estudiante-datos{
+        margin-bottom: 15px;
+    }
+    .testimonio__estudiante-nombre{
+        margin-bottom: 10px;
+    }
+    .testimonios__estudiante-personas{
+        margin-bottom: 20px;
+    }
+    .testimonios__estudiante-personas ul li{
+        margin: 0 5px 0 5px;
+    }
+    .footer__siguenos{
+        margin-left: 5px;
+    }
+    /*------------------------------NIVELES.HTML------------------------------*/
+    .contenido__niveles > div{
+        width: 100%;
+        height: 40vh;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 767px){
+    body{
+        font-size: .8rem;
+    }
+    /*Ocultar nav pc resolucion 1300x600*/
+    .header__nav-caja{
+        display: none;
+    }
+    /*Modificando la tabla desplegable responsiva*/
+    .header__nav-boton{
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        padding-top: 4px;
+    }
+    /*Alinear el contenedor del href titulo*/
+    .header__nav-a{
+        width: 90%;
+        text-align: start;
+    }
+    /*Aplicando padding al href titulo*/
+    .header__nav-a a{
+        padding-left: 10px;
+        width: 100%;
+    }
+    /*Modificando el texto de las listas responsiva*/
+    .header__nav-caja-responsive__li a{
+        color: white;
+        padding-left: 10px;
+        font-size: .7rem;
+        font-weight: 600;
+        width: 100vw;
+        display: block;
+    }
+    /*Modificando el espacio entre las listas*/
+    .header__nav-caja-responsive__li{
+        padding: 10px 0 10px 0;
+        width: 100vw;
+        display: block;
+    }
+    /*background al listado*/
+    .header__nav-caja-responsive__ul{
+        background-image: linear-gradient( rgba(0, 0, 0, 0.7) 100%, rgba(0, 0, 0, 0.7)100%);
+    }
+    /*Modificando el div tabla desplegable*/
+    .boton-img{
+        width: 32px;
+        height: 32px;
+        margin-left: 88%; 
+        position: relative;
+    }
+    /*Ajustando el nav*/
+    nav {
+        padding: 10px 0 10px 0;
+    }
+    /*Activar el desplegable*/
+    .header__nav-boton:hover > ul{
+        display: block;
+        position: absolute;
+        margin-top: 13px;
+        width: 100%;
+    }
+    .contenido__primario{
+        padding: 5% 0 7% 0;
+    }
+    .contenido__primario-porque{
+        width: 95%;
+        text-align: justify;
+    }
+    .contenido__primario-porque h1{
+        text-align: center;
+    }
+    .contenido__secundario{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contenido__secundario-mv{
+        width: 100%;
+        padding: 10px 0px 10px 0px;
+        text-align: justify;
+    }
+    .contenido__secundario-mv h1{
+        text-align: center;
+    }
+    .contenido__secundario-mv p{
+        padding: 0 20px 0 20px;
+    }
+    .contenido__terciario{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .contenido__terciario-valores{
+        width: 260px;
+        height: 360px;
+        margin: 20px 0 20px 0;
+    }
+    .contenido__terciario-valores_img{
+        width: 70px;
+        height: 70px;
+        padding: 10px 0 10px 0;
+    }
+    .contenido__terciario-valores h2{
+        padding: 15px 0 15px 0;
+    }
+    .contenido__terciario-valores p{
+        margin: 0px 20px 0 20px;
+    }
+    .contenido__testiomonios-contenedor{
+        width: 80%;
+    }
+    .testimonios__estudiante-personas_img{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+    .testimonios__header{
+        margin-bottom: 30px;
+    }
+    .testimonios__estudiante-datos{
+        margin-bottom: 15px;
+    }
+    .testimonio__estudiante-nombre{
+        margin-bottom: 10px;
+    }
+    .testimonios__estudiante-personas{
+        margin-bottom: 20px;
+    }
+    .testimonios__estudiante-personas ul li{
+        margin: 0 5px 0 5px;
+    }
+    .footer__siguenos{
+        margin-left: 15px;
+    }
+    .contenido__niveles > div{
+        height: 60vh;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1500px){
+    body{
+        font-size: 1rem;
+    }
+    .contenido__primario-porque{
+        width: 90%;
+        text-align: center;
+    }
+    .contenido__primario-porque h1{
+        text-align: center;
+    }
+    .contenido__secundario{
+        width: 100vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .contenido__secundario-mv{
+        width: 100%;
+        padding: 10px 0px 10px 0px;
+        text-align: center;
+    }
+    .contenido__secundario-mv h1{
+        text-align: center;
+    }
+    .contenido__secundario-mv p{
+        padding: 0 9% 0  9%;
+    }
+    .contenido__terciario{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .contenido__terciario-valores{
+        width: 320px;
+        height: 420px;
+        margin: 20px 0 20px 0;
+        justify-content: space-evenly;
+    }
+    .contenido__terciario-valores_img{
+        width:  85px;
+        height: 85px;
+        padding: 10px 0 10px 0;
+    }
+    .contenido__terciario-valores h2{
+        padding: 20px 0 20px 0;
+    }
+    .contenido__terciario-valores p{
+        margin: 0px 20px 0 20px;
+    }
+    .contenido__testiomonios-contenedor{
+        width: 50%;
+    }
+    .contenido__niveles > div{
+        height: 80vh;
+    }
+    .contenido__datos p{
+        padding: 0 20px 0 20px;
+    }
+
+}
